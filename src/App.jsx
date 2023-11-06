@@ -5,16 +5,16 @@ import "./app.scss";
 const App = () => {
   return (
     <div>
-      <section>
+      <section id="Anasayfa">
         <Navbar />
       </section>
-      <section>Parallax</section>
+      <section id="Servisler">Parallax</section>
       <section>Services</section>
-      <section>Parallax</section>
+      <section id="Portfolyo">Parallax</section>
       <section>Portflio1</section>
       <section>Portflio2</section>
       <section>Portflio3</section>
-      <section>Portflio4</section>
+      <section id="İletişim">Portflio4</section>
       {/* <Test />
       <Test /> */}
     </div>
