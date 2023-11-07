@@ -1,5 +1,7 @@
+import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
-import Test from "../components/navbar/Test";
+import Parrallax from "../components/parrallax/Parrallax";
+
 import "./app.scss";
 
 const App = () => {
@@ -7,10 +9,15 @@ const App = () => {
     <div>
       <section id="Anasayfa">
         <Navbar />
+        <Hero />
       </section>
-      <section id="Servisler">Parallax</section>
+      <section id="Servisler">
+        <Parrallax type="services" />
+      </section>
       <section>Services</section>
-      <section id="Portfolyo">Parallax</section>
+      <section id="Portfolyo">
+        <Parrallax type="portfolio" />
+      </section>
       <section>Portflio1</section>
       <section>Portflio2</section>
       <section>Portflio3</section>
