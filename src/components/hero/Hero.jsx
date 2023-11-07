@@ -1,5 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+
 const textVariants = {
   initial: {
     x: -500,
@@ -16,7 +17,10 @@ const textVariants = {
   scrollButton: {
     opacity: 0,
     y: 10,
-    transition: { duration: 2, repeat: Infinity },
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
   },
 };
 const sliderVariants = {
@@ -32,6 +36,7 @@ const sliderVariants = {
     },
   },
 };
+
 const Hero = () => {
   return (
     <div className="hero">
@@ -42,15 +47,15 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARUN HATİBOĞLU </motion.h2>
+          <motion.h2 variants={textVariants}>HARUN HATIBOGLU</motion.h2>
           <motion.h1 variants={textVariants}>
             Full Stack Web and Mobile Developer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
-              Projelerime Göz Atın{" "}
+              See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>İletişime Geç</motion.button>
+            <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -61,15 +66,15 @@ const Hero = () => {
         </motion.div>
       </div>
       <motion.div
+        className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
-        className="slidingTextContainer"
       >
-        React.js Next.js React Native Node.js
+        React Next Node Figma
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png"></img>
+        <img src="/hero.png" alt="" />
       </div>
     </div>
   );
